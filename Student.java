@@ -1,7 +1,7 @@
 public class Student {
     private String name;
     private double finalGrade;
-
+    private blala;
     public Student(String name, double finalGrade) {
         this.name = name;
         this.finalGrade = finalGrade;
