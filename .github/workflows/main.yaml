@@ -1,0 +1,22 @@
+name: App test 
+on: 
+  pull_request :
+  branches:
+  - main
+jobs:
+  test_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Gradle
+      uses: gradle/gradle-build-action@v2
+
+      
+    - name: Run Test with Gradle Wrapper
+      run: ./gradlew test
+
+  
+
+
